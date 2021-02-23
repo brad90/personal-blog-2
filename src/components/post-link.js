@@ -4,8 +4,11 @@ import { Link } from "gatsby"
 const PostLink = ({ post }) => (
   <article className="card ">
     <Link to={post.frontmatter.path}>
-      {!!post.frontmatter.thumbnail && (
+      {/* {!!post.frontmatter.thumbnail && (
         <img src={post.frontmatter.thumbnail} alt={post.frontmatter.title + "- Featured Shot"} />
+      )} */}
+      {!!post.frontmatter.thumbnail && (
+        <div className="post-card-image" style={{ backgroundImage: `url(${post.frontmatter.thumbnail})`}}></div>
       )}
     </Link>
     <header>
