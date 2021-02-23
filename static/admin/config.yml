@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   # change repo to your git repository url
-  repo: brad90/personal-blog2.0
+  repo: personal-blog2.0
   branch: main
 
 media_folder: static/assets
